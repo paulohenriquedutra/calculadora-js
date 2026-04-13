@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="BackCalc.js"></script>
+    <script src="interacao.js" defer></script>
+  </head> 
+
+  <body class="bg-gray-900 min-h-screen flex items-center justify-center">
+    
+    <div id="main-box" class="bg-gray-800 p-5 rounded-2xl shadow-xl w-72">
+      
+      <div id="visor" class="mb-4">
+        <p
+          id="outputSoma"
+          class="w-full p-3 text-right text-2xl bg-gray-700 text-white rounded-lg outline-none"
+        >0</p>
+      </div>
+
+      <div id="numeros" class="grid grid-cols-4 gap-2">
+
+        <button class="nums bg-gray-600 text-white p-3 rounded-lg hover:bg-gray-500">0</button>
+        <button class="nums bg-gray-600 text-white p-3 rounded-lg hover:bg-gray-500">1</button>
+        <button class="nums bg-gray-600 text-white p-3 rounded-lg hover:bg-gray-500">2</button>
+        <button class="nums bg-gray-600 text-white p-3 rounded-lg hover:bg-gray-500">3</button>
+
+        <button class="nums bg-gray-600 text-white p-3 rounded-lg hover:bg-gray-500">4</button>
+        <button class="nums bg-gray-600 text-white p-3 rounded-lg hover:bg-gray-500">5</button>
+        <button class="nums bg-gray-600 text-white p-3 rounded-lg hover:bg-gray-500">6</button>
+        <button class="nums bg-gray-600 text-white p-3 rounded-lg hover:bg-gray-500">7</button>
+
+        <button class="nums bg-gray-600 text-white p-3 rounded-lg hover:bg-gray-500">8</button>
+        <button class="nums bg-gray-600 text-white p-3 rounded-lg hover:bg-gray-500">9</button>
+
+        <button class="operador bg-orange-600 text-white p-3 rounded-lg hover:bg-orange-500">+</button>
+        <button class="operador bg-orange-600 text-white p-3 rounded-lg hover:bg-orange-500">-</button>
+        <button class="operador bg-orange-600 text-white p-3 rounded-lg hover:bg-orange-500">/</button>
+        <button class="operador bg-orange-600 text-white p-3 rounded-lg hover:bg-orange-500">*</button>
+
+        
+        <button id="apagar" class="col-span-2 bg-red-500 text-white p-3 rounded-lg hover:bg-red-400">voltar</button>
+        <button id="igual" class="col-span-4  bg-green-500 text-white p-3 rounded-lg hover:bg-green-400">=</button>
+
+      </div>
+    </div>
+
+  </body>
+</html>
